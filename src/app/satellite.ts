@@ -13,10 +13,17 @@ export class Satellite {
 		this.orbitType = orbitType;
 		this.operational = operational;
    }
-	
-	isSpaceDebris(): boolean {
+
+// TODO 3a: fix isSpaceDebris check
+   shouldShowWarning(){
+	if(this.type.toLowerCase()=== "space debris"){
 		return true;
+	}else{
+		return false;
+	}
    }
+	
+	
 
 }
 
